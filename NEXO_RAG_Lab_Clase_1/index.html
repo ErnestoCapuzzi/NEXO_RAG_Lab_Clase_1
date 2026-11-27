@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070914">
+  <meta name="description" content="NEXO RAG Lab: una experiencia interactiva para aprender estrategias de segmentación avanzada, LangChain, LlamaIndex y recuperación de documentos desde cero.">
+  <meta property="og:title" content="NEXO / RAG LAB · Aprendé a dividir sin romper el sentido">
+  <meta property="og:description" content="7 módulos interactivos, laboratorios, examen y generador de historias para Instagram. Módulo 1 · Clase 1.">
+  <title>NEXO / RAG LAB — Estrategias de segmentación avanzada</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <canvas id="ambient" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="brand" data-go="overview" aria-label="Volver al inicio de NEXO RAG Lab">
+        <span class="brand-symbol" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand-name">NEXO<span class="brand-sep">/</span><strong>RAG LAB</strong></span>
+      </button>
+      <div class="topbar-center"><span class="live-dot"></span> MÓDULO 01 <span class="sep-dot">·</span> CLASE 01 <span class="edition">EDICIÓN INTERACTIVA</span></div>
+      <div class="topbar-actions">
+        <button class="top-link" data-go="overview"><span class="top-link-icon">⌂</span><span>Inicio</span></button>
+        <button class="top-link" data-go="exam"><span class="top-link-icon">◈</span><span>Desafío</span></button>
+        <button class="button button-mini button-outline" data-go="studio">↗ <span>Historia IG</span></button>
+      </div>
+    </header>
+    <div class="layout">
+      <aside class="sidebar" aria-label="Ruta de aprendizaje">
+        <div class="sidebar-title"><span class="eyebrow">TU RUTA</span><span class="tiny-pulse" aria-hidden="true"></span></div>
+        <div class="progress-panel">
+          <div class="progress-top"><span>Exploración</span><span id="progress-percent">0%</span></div>
+          <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+          <span class="progress-note" id="progress-note">Comenzá tu recorrido</span>
+        </div>
+        <nav class="lesson-nav" id="lesson-nav" aria-label="Capítulos"></nav>
+        <div class="sidebar-bottom">
+          <div class="aside-note"><span class="aside-note-icon">✦</span><p>La IA no entiende un documento mejor de lo que vos lo preparás.</p></div>
+          <span class="aside-credit">BASADO EN EL MATERIAL DE CLASE · NO OFICIAL</span>
+        </div>
+      </aside>
+      <main id="main" tabindex="-1"></main>
+    </div>
+    <footer class="site-footer"><span>NEXO <b>/</b> RAG LAB</span><span>Aprender haciendo, entendiendo y experimentando.</span><span>Estudio interactivo independiente · 2026</span></footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
